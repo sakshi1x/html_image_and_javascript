@@ -1,0 +1,41 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Sydney-Galaxy-homebush.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.centered-box {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Change background color and opacity as needed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Query for screens less than 600px */
+@media screen and (max-width: 600px) {
+  .centered-box {
+    width: 100%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+  }
+}
